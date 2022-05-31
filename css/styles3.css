@@ -160,6 +160,11 @@ h2{
             max-width: 30rem;
             max-height: 20rem;
             border-radius: 35px;
+            transition: all 1s;
+        }
+        .Noticias:hover{
+            max-width: 33rem;
+            max-height: 23rem;
         }
         .CompetenciaLogos{
             display: flex;
@@ -266,4 +271,12 @@ main{
 
 footer{
     grid-area: footer;
+}
+
+.Video{
+    transition: all 1s;
+}
+
+.Video:hover{
+    border: solid rgb(56, 75, 124) 10px;
 }
