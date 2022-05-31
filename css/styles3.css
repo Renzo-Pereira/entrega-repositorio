@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    color: dodgerblue;
+}
+
+.grilla{
+    display: grid;
+    grid-template-rows: 26% auto 50%;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas: "header"
+    "main"
+    "footer"
+}
+
+@media (min-width: 320px){
+    .grilla{
+        display: grid;
+        grid-template-rows: 26% auto 50%;
+        gap: 10px;
+        height: 100vh;
+        grid-template-areas: "header"
+        "main"
+        "footer"
+    }
+        header .Redes{
+        margin-top: -17vh;
+        }
+        .Icono{
+            height: 3vh;
+        }
+        h2{
+            text-align: center;
+            font-size: 10vh;
+        }
+        .NovedadesA{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .TextoNovedades{
+            max-width: 50rem;
+        }
+        .NovedadesB{
+            margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        }
+        .Noticias{
+            max-width: 50rem;
+            max-height: 20rem;
+            border-radius: 35px;
+        }
+        .CompetenciaLogos{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Logo2{
+            max-width: 10rem;
+        }
+        .Evento{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .TextoEvento{
+            display: flex;
+            align-items: center;
+        }
+        .gridContainer{
+        max-width: 1000px;
+        padding: 1rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 4, 250px;
+        gap: 1rem;
+        text-align: center;
+        }
+        .Atletas{
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 100px;
+        object-fit: contain;
+    }
+    .menuinferior{
+        padding: 3rem;
+        color: rgb(94, 155, 234);
+        background-color: black;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1rem solid rgb(94, 155, 234);
+        border-top: 1rem solid rgb(94, 155, 234);
+    }
+    .Disponible{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1200px){
+    .grilla{
+        display: grid;
+        grid-template-rows: 26% auto 50%;
+        gap: 10px;
+        height: 100vh;
+        grid-template-areas: "header"
+        "main"
+        "footer"
+    }
+    
+    .header{
+        max-height: 70% 
+    }
+    header .Redes{
+        margin-top: -19vh;
+        }
+        .Icono{
+            height: 3vh;
+        }
+        h2{
+            text-align: left;
+            font-size: 5vh;
+        }
+        .NovedadesA{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+        }
+        .NovedadesB{
+            margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        }
+        .Noticias{
+            max-width: 30rem;
+            max-height: 20rem;
+            border-radius: 35px;
+        }
+        .CompetenciaLogos{
+            display: flex;
+            justify-content: space-around;
+        }
+        .Logo2{
+            max-width: 20rem;
+        }
+        .Competiciones{
+            font-size: 5rem;
+        }
+        .ImgEvento{
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .Evento{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .Disponible{
+            display: flex;
+            justify-content: space-evenly;
+        }
+}
+
+
+
+@media screen and  (min-width: 1500px){
+    .grilla{
+        display: grid;
+        grid-template-rows: 26% auto 50%;
+        gap: 10px;
+        height: 100vh;
+        grid-template-areas: "header"
+        "main"
+        "footer"
+    }
+    
+    .header{
+        max-height: 80% 
+    }
+    header .Redes{
+        margin-top: -20vh;
+        }
+        .Icono{
+            height: 3vh;
+        }
+    
+}
+
+/* --------------------HEADER-------------------- */
+
+header{
+    max-height: 150px;
+    grid-area: header;
+    background-image: url(https://media.cdnp.elobservador.com.uy/122021/1639061001276/_INE6831_1.jpg?cw=1500&ch=1000);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.Logo{
+    display: flex;
+    justify-content: start;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    color:dodgerblue;
+    font-size: 500%;
+}
+
+
+
+header .Redes{
+    display: flex;
+    justify-content: end;
+}
+
+/*  */
+nav ul li{
+float: left;
+}
+nav ul{
+    font-size: 150%;
+    background-color: rgb(94, 155, 234);
+    display: flex;
+    justify-content: space-around;
+}
+/*  */
+
+
+
+/* ---------------------------------------------- */
+
+main{
+    grid-area: main;
+    background-color: aliceblue;
+}
+
+footer{
+    grid-area: footer;
+}
