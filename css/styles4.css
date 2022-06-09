@@ -1,244 +1,182 @@
+@charset "UTF-8";
 /* ----------------------------------------------------------------------------------------------------HEADER */
 /*  */
 /*  */
-ul{
-    list-style: none;
-}
+ul {
+  list-style: none; }
 
-.Logo{
-    display: flex;
-}
+.Logo {
+  display: flex; }
 
-h1{
-    display: flex;
-    align-items: end;
-}
-.Icono{
-    height: 3vh;
-}
+h1 {
+  display: flex;
+  align-items: end; }
 
-.Logo .Redes{
-    display: flex;
-    align-items: end;
-}
+.Icono {
+  height: 3vh; }
+
+.Logo .Redes {
+  display: flex;
+  align-items: end; }
+
 /*  */
 /*  */
 /* ----------------------------------------------------------------------------------------------------EVENTOS */
 /*  */
 /*  */
-.CompetenciaLogos{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.Logo2{
-    max-width: 10rem;
-}
+.CompetenciaLogos {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .CompetenciaLogos .Logo2 {
+    max-width: 10rem; }
+  .CompetenciaLogos h2 {
+    color: #0d6efd; }
 
-h2{
-    color: #0d6efd;
-}
+.ImgEvento {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; }
 
-.CompetenciaLogos{
-    display: flex;
-    justify-content: space-around;
-}
-
-.ImgEvento{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
 /*  */
 /*  */
 /* ----------------------------------------------------------------------------------------------------ATLETAS */
 /*  */
 /*  */
-.gridContainer{
-    max-width: 1000px;
-    padding: 1rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 4, 250px;
-    gap: 1rem;
-    text-align: center;
-    }
-    .Atletas{
+.gridContainer {
+  max-width: 1000px;
+  padding: 1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 4, 250px;
+  gap: 1rem;
+  text-align: center; }
+  .gridContainer .Atletas {
     max-width: 100%;
     max-height: 100%;
     border-radius: 100px;
-    object-fit: contain;
-}
+    object-fit: contain; }
 
-.mas{
-    display: flex;
-    justify-content: center;
-}
+.mas {
+  display: flex;
+  justify-content: center; }
+
 /*  */
 /*  */
 /* ----------------------------------------------------------------------------------------------------FOOTER */
 /*  */
 /*  */
-.menuinferior{
-        padding: 3rem;
-        color: rgb(94, 155, 234);
-        background-color: black;
-        text-align: center;
-        display: flex;
-        justify-content: space-around;
-        border-bottom: 1rem solid #0d6efd;
-        border-top: 1rem solid #0d6efd;
-    }
+.menuinferior {
+  padding: 3rem;
+  color: #5e9bea;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1rem solid #0d6efd;
+  border-top: 1rem solid #0d6efd; }
 
-.Disponible{
-        display: flex;
-        justify-content: space-evenly;
-    }
+.Disponible {
+  display: flex;
+  justify-content: space-evenly; }
+
 /*  */
 /*  */
 /* ---------------------------------------------------------------------------------------------------- */
 /*  */
 /*  */
-
-@media (min-width: 320px){
-    .layout{
-        display: grid;
-        grid-template-rows: 12em 3em auto 5fr;
-        gap: 10px;
-        height: 100vh;
-        grid-template-areas: "header"
-        "navegacion"
-        "contenido"
-        "footer"
-    }
-
-    .header{
-        grid-area: header;
-    }
-
-    .navegacion{
-        grid-area: navegacion;
-    }
-
-    .contenido{
-        grid-area: contenido;
-    }
-
-    .footer{
-        grid-area: footer;
-    }
-
-    .NovedadesA{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .textoA{
-    text-align: center;
-    max-width: 100%;
-    }
-}
-
-@media (min-width: 1200px){
-
-    .NovedadesA{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: row;
-    }
-
-    .textoA{
-        text-align: center;
-        max-width: 40%; 
-        }
-
-    .Video{
-        width: 720px;
-        height: 480px;
-        transition: all 1s;
-    }
-
-    .Video:hover{
-        width: 740px;
-        height: 500px;
-    }
-    
-    
-}
-
-
-/* ---------------------------------------------------------------------------------------------------- */
-/*  */
-/*  */ 
-/* ----------------------------------------------------------------------------------------------------Pestaña Competencias */
-.Ultima{
+@media (min-width: 320px) {
+  .layout {
+    display: grid;
+    grid-template-rows: 12em 3em auto 5fr;
+    gap: 10px;
+    height: 100vh;
+    grid-template-areas: "header" "navegacion" "contenido" "footer"; }
+  .header {
+    grid-area: header; }
+  .navegacion {
+    grid-area: navegacion; }
+  .contenido {
+    grid-area: contenido; }
+  .footer {
+    grid-area: footer; }
+  .NovedadesA {
     display: flex;
-}
+    flex-direction: column; }
+  .textoA {
+    text-align: center;
+    max-width: 100%; } }
 
-.UltimaC{
+@media (min-width: 1200px) {
+  .NovedadesA {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; }
+    .NovedadesA .textoA {
+      text-align: center;
+      max-width: 40%; }
+  .Video {
+    width: 720px;
+    height: 480px;
+    transition: all 1s; }
+    .Video:hover {
+      width: 740px;
+      height: 500px; } }
+
+/* ---------------------------------------------------------------------------------------------------- */
+/*  */
+/*  */
+/* ----------------------------------------------------------------------------------------------------Pestaña Competencias */
+.Ultima {
+  display: flex; }
+  .Ultima .UltimaC {
     margin: 1em;
     padding: 1em;
     max-width: 60%;
     border: solid #0d6efd;
-    transition: all 1s;
-}
-
-.UltimaC:hover{
-    max-width: 65%;
-}
-
-.TextoC{
+    transition: all 1s; }
+    .Ultima .UltimaC:hover {
+      max-width: 65%; }
+  .Ultima .TextoC {
     text-align: center;
     margin: 1em;
     padding: 1em;
-    max-width: 50%;
-}
+    max-width: 50%; }
+
 /*  */
 /* ---------------------------------------------------------------------------------------------------- */
-/*  */ 
-
+/*  */
 /* ---------------------------------------------------------------------------------------------------- */
 /*  */
 /* ----------------------------------------------------------------------------------------------------Index Competiciones */
-.Evento{
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-.TextoEvento{
+.Evento {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly; }
+  .Evento .TextoEvento {
     display: flex;
     align-items: center;
-    max-width: 20%;
-}
+    max-width: 20%; }
+
 /*  */
 /* ---------------------------------------------------------------------------------------------------- */
 /*  */
-
 /* ---------------------------------------------------------------------------------------------------- */
 /*  */
 /* ----------------------------------------------------------------------------------------------------Tienda Oficiales */
-.tienda{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.Nelo5{
+.tienda {
+  display: flex;
+  justify-content: space-evenly; }
+  .tienda .Nelo5 {
     transition: all 1s;
-    max-width: 1080px;
-}
-
-.Nelo5:hover{
-    max-width: 1100px;
-}
-
-.TextoT{
-    font-size: 2em;
-}
+    max-width: 1080px; }
+    .tienda .Nelo5:hover {
+      max-width: 1100px; }
+    .tienda .Nelo5 .TextoT {
+      font-size: 2em; }
 
 /*  */
 /* ---------------------------------------------------------------------------------------------------- */
-/*  */ 
+/*  */
