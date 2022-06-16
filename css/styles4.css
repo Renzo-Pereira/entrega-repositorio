@@ -180,3 +180,29 @@ h1 {
 /*  */
 /* ---------------------------------------------------------------------------------------------------- */
 /*  */
+button, .btn--Pcookies, .btn--Acookies, .btn--Tservicios, .btn--Pprivacidad {
+  background-color: black;
+  color: red;
+  border-radius: 10px;
+  width: 100px;
+  height: 60px; }
+
+.btn--Pcookies {
+  background-color: #02265c; }
+
+.btn--Acookies {
+  background-color: blue; }
+
+.btn--Tservicios {
+  background-color: #0247af; }
+
+.btn--Pprivacidad {
+  background-color: #82b1f7; }
+
+.TextoEvento {
+  color: #4f94fc; }
+
+.textoA {
+  background-color: #0d6efd;
+  color: #eee;
+  border-radius: 10px; }

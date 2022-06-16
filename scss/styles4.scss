@@ -1,5 +1,5 @@
 @import 'Colores';
-
+@import 'mixins';
 /* ----------------------------------------------------------------------------------------------------HEADER */
 /*  */
 /*  */
@@ -228,3 +228,29 @@ h2{
 /*  */
 /* ---------------------------------------------------------------------------------------------------- */
 /*  */ 
+
+
+
+button{
+    background-color: black;
+    color: red;
+    border-radius: 10px;
+    width: 100px;
+    height: 60px;
+}
+
+@each $menu, $valor in $mapa{
+
+    .btn--#{$menu}{
+        @extend button;
+        background-color: $valor;
+    }
+}
+
+.TextoEvento{
+    color: map-get($estilos ,texto)
+}
+
+.textoA{
+    @include estilo;
+}
