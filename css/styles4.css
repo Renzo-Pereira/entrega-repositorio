@@ -90,7 +90,7 @@ h1 {
 @media (min-width: 320px) {
   .layout {
     display: grid;
-    grid-template-rows: 4em 5em auto 5fr;
+    grid-template-rows: 4em auto auto 5fr;
     gap: 10px;
     height: 100vh;
     grid-template-areas: "header" "navegacion" "contenido" "footer"; }
@@ -101,11 +101,9 @@ h1 {
     flex-direction: row; }
   .navegacion {
     grid-area: navegacion; }
-  .Video {
-    display: flex;
-    justify-content: center; }
   .tamaño {
-    max-width: 360px; }
+    max-width: 360px;
+    text-align: center; }
   .Prueba {
     display: flex;
     flex-direction: column;
@@ -114,12 +112,16 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .p .TextoEvento {
+      text-align: center;
+      color: #000000; }
   .ImgEvento {
     max-width: 360px; }
   .contenido {
     grid-area: contenido; }
   .footer {
-    grid-area: footer;
+    grid-area: footer; }
+  .oculto {
     display: none; }
   .NovedadesA {
     display: flex;
@@ -127,6 +129,9 @@ h1 {
   .textoA {
     text-align: center;
     max-width: 100%; }
+  .Caja {
+    width: 320px;
+    height: 210px; }
   .imagenes {
     display: flex;
     align-items: center;
@@ -178,11 +183,11 @@ h1 {
     .NovedadesA .textoA {
       text-align: center;
       max-width: 40%; }
-  .Video {
+  .Caja {
     width: 720px;
     height: 480px;
     transition: all 1s; }
-    .Video:hover {
+    .Caja:hover {
       width: 740px;
       height: 500px; }
   .Prueba {
@@ -258,8 +263,7 @@ button, .btn--Pcookies, .btn--Acookies, .btn--Tservicios, .btn--Pprivacidad {
   background-color: black;
   color: red;
   border-radius: 10px;
-  width: 100px;
-  height: 60px; }
+  width: 80px; }
 
 .btn--Pcookies {
   background-color: #02265c; }
@@ -272,9 +276,6 @@ button, .btn--Pcookies, .btn--Acookies, .btn--Tservicios, .btn--Pprivacidad {
 
 .btn--Pprivacidad {
   background-color: #82b1f7; }
-
-.TextoEvento {
-  color: #4f94fc; }
 
 .textoA {
   background-color: #0d6efd;

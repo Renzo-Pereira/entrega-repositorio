@@ -101,7 +101,7 @@ h2{
 @media (min-width: 320px){
     .layout{
         display: grid;
-        grid-template-rows: 4em 5em auto 5fr;
+        grid-template-rows: 4em auto auto 5fr;
         gap: 10px;
         height: 100vh;
         grid-template-areas: "header"
@@ -123,13 +123,9 @@ h2{
         grid-area: navegacion;
     }
 
-.Video{
-    display: flex;
-    justify-content: center;
-}
-
 .tamaño{
     max-width: 360px;
+    text-align: center;
 }
 
 .Prueba{
@@ -142,6 +138,12 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+
+    .TextoEvento{
+        text-align: center;
+        color: map-get($estilos ,texto)
+    }
 }
 
 .ImgEvento{
@@ -154,6 +156,9 @@ h2{
 
     .footer{
         grid-area: footer;
+    }
+
+    .oculto{
         display: none;
     }
 
@@ -165,6 +170,11 @@ h2{
     .textoA{
     text-align: center;
     max-width: 100%;
+    }
+
+    .Caja{
+        width: 320px;
+        height: 210px;
     }
 
     .imagenes{
@@ -249,7 +259,7 @@ h2{
         }
     }
 
-    .Video{
+    .Caja{
         width: 720px;
         height: 480px;
         transition: all 1s;
@@ -369,8 +379,7 @@ button{
     background-color: black;
     color: red;
     border-radius: 10px;
-    width: 100px;
-    height: 60px;
+    width: 80px;
 }
 
 @each $menu, $valor in $mapa{
@@ -382,7 +391,7 @@ button{
 }
 
 .TextoEvento{
-    color: map-get($estilos ,texto)
+    
 }
 
 .textoA{
