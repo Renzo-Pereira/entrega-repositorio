@@ -23,6 +23,9 @@ h1{
     display: flex;
     align-items: end;
 }
+
+
+
 /*  */
 /*  */
 /* ----------------------------------------------------------------------------------------------------EVENTOS */
@@ -76,13 +79,19 @@ h2{
 /*  */
 /*  */
 .menuinferior{
+    h3{
+        margin: 0;
+    }
+    ul{
+        padding: 0;
+    }
         padding: 3rem;
         color: rgb(94, 155, 234);
         background-color: black;
         text-align: center;
         display: flex;
         justify-content: space-around;
-        border-bottom: 1rem solid $color-1;
+        border-bottom: 0.5rem solid $color-1;
         border-top: 1rem solid $color-1;
     }
 
@@ -98,6 +107,7 @@ h2{
 
 @media (min-width: 320px){
     .layout{
+        background-color: #ECF9FD;
         display: grid;
         grid-template-rows: 4em auto auto 5fr;
         gap: 10px;
@@ -127,6 +137,7 @@ h2{
 }
 
 .Prueba{
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -168,6 +179,9 @@ h2{
             display: flex;
             flex-direction: column;
             align-items: center;
+            h3{
+                text-align: center;
+            }
     }
 
     .textoA{
@@ -209,6 +223,10 @@ h2{
         display: flex;
         align-items: center;
         flex-direction: column;
+        .enviar{
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .Ultima{
@@ -223,14 +241,14 @@ h2{
         
         }
     .TextoC{
-        text-align: justify;
+        text-align: center;
         margin: 1em;
         padding: 1em;
         max-width: 100%;
         }
     }
 
-    /* ---------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 /*  */
 /* ----------------------------------------------------------------------------------------------------Index Competiciones */
 
@@ -279,9 +297,16 @@ h2{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
+        .NoticiaA{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 40%; 
+        }
     .textoA{
         text-align: center;
-        max-width: 40%; 
+        max-width: 90%; 
         }
     }
 
@@ -353,10 +378,6 @@ h2{
         padding: 10px;
     }
 
-    .tienda{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
     .Nelo5{
         transition: all 1s;
         max-width: 1080px;
@@ -367,7 +388,7 @@ h2{
         font-size: 2em;
         }
         }
-    }
+    
 
     .Evento{
         text-align: center;
@@ -383,10 +404,71 @@ h2{
 
     .ContactoL{
         display: flex;
-        align-items: flex-start;
+        justify-content: center;
         flex-direction: column;
+        .enviar{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+/* ---------------------------------------------------------------------------------------------------- */
+/*  */
+/* ----------------------------------------------------------------------------------------------------Tienda */
+
+.tienda{
+    text-align: start;
+display: inline;
+    .TextoTienda{
+        text-align: start;
+    }
+    .bTienda{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .aTienda{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Nelo5{
+            transition: all 1s;
+            max-width: 1080px;
+        &:hover{
+            max-width: 1100px;
+        }
+        .TextoT{
+            
+    font-size: 2em;
+        }
     }
 }
+.TituloTienda{
+    text-align: center;
+}
+
+/*  */
+/* ---------------------------------------------------------------------------------------------------- */
+/*  */
+
+/* ---------------------------------------------------------------------------------------------------- */
+/*  */
+/* ----------------------------------------------------------------------------------------------------Historia */
+
+.PaginaHistoria{
+    p{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+/*  */
+/* ---------------------------------------------------------------------------------------------------- */
+/*  */ 
+
+}
+
 
 
 
