@@ -194,6 +194,16 @@ h1 {
     text-align: center; }
   /*  */
   /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ----------------------------------------------------------------------------------------------------Historia */
+  .PrimerImagenH img {
+    width: 375px; }
+  .SegundaImagenH img {
+    width: 375px; }
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
   /*  */ }
 
 @media (min-width: 1200px) {
@@ -319,16 +329,47 @@ h1 {
   .PaginaHistoria p {
     padding-right: 100px;
     padding-left: 100px; }
+  .PrimerImagenH {
+    display: flex;
+    flex-direction: row; }
+    .PrimerImagenH .Texto {
+      display: flex;
+      flex-direction: column; }
+    .PrimerImagenH .Imagen {
+      padding-right: 100px; }
+    .PrimerImagenH img {
+      border: 0.1rem solid #5e9bea;
+      width: 420px;
+      height: 200px; }
+  .PaginaHistoria p {
+    padding-right: 100px;
+    padding-left: 100px; }
+  .SegundaImagenH {
+    display: flex;
+    flex-direction: row-reverse; }
+    .SegundaImagenH .Texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+    .SegundaImagenH .Imagen {
+      padding-left: 100px; }
+    .SegundaImagenH img {
+      border: 0.1rem solid #5e9bea;
+      width: 400px;
+      height: 200px; }
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ----------------------------------------------------------------------------------------------------Galeria */
+  .gridGaleria img {
+    width: 360px;
+    height: 209px; }
   /*  */
   /* ---------------------------------------------------------------------------------------------------- */
   /*  */ }
 
-/* ---------------------------------------------------------------------------------------------------- */
-/*  */
-/* ----------------------------------------------------------------------------------------------------Tienda Oficiales */
-/*  */
-/* ---------------------------------------------------------------------------------------------------- */
-/*  */
 button, .btn--Pcookies, .btn--Acookies, .btn--Tservicios, .btn--Pprivacidad {
   background-color: black;
   color: red;
