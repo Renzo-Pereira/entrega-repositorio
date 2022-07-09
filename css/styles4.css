@@ -148,39 +148,15 @@ h1 {
     .Evento .mapaindex {
       width: 360px;
       height: 300px; }
+  .atleta img {
+    width: 3rem;
+    height: 3rem; }
   .Semifinal {
     display: flex;
     align-content: center; }
-  .imagenes {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .imagenes img {
-    padding: 10px; }
-  .ContactoL {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-    .ContactoL .enviar {
-      display: flex;
-      justify-content: center; }
-  .Ultima {
-    display: flex;
-    flex-direction: column;
-    align-content: center; }
-    .Ultima .UltimaC {
-      margin: 1em;
-      padding: 1em;
-      max-width: 90%;
-      border: solid #0d6efd; }
-    .Ultima .TextoC {
-      text-align: center;
-      margin: 1em;
-      padding: 1em;
-      max-width: 100%; }
   /* ---------------------------------------------------------------------------------------------------- */
   /*  */
-  /* ----------------------------------------------------------------------------------------------------Index Competiciones */
+  /* ----------------------------------------------------------------------------------------------------Tienda */
   .tienda {
     display: flex;
     flex-direction: column;
@@ -198,13 +174,64 @@ h1 {
   /* ---------------------------------------------------------------------------------------------------- */
   /*  */
   /* ----------------------------------------------------------------------------------------------------Historia */
+  .PaginaHistoria {
+    margin: 1rem; }
   .PrimerImagenH img {
-    width: 375px; }
+    width: 320px; }
   .SegundaImagenH img {
-    width: 375px; }
+    width: 320px; }
   /*  */
   /* ---------------------------------------------------------------------------------------------------- */
-  /*  */ }
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ----------------------------------------------------------------------------------------------------Competencias */
+  .Ultima {
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+    .Ultima .UltimaC {
+      margin: 1em;
+      padding: 1em;
+      max-width: 90%;
+      border: solid #0d6efd; }
+    .Ultima .TextoC {
+      text-align: center;
+      margin: 1em;
+      padding: 1em;
+      max-width: 100%; }
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ----------------------------------------------------------------------------------------------------Galeria */
+  .imagenes {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .imagenes img {
+    width: 360px;
+    height: 209px;
+    padding: 10px; }
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ----------------------------------------------------------------------------------------------------Contacto */
+  .ContactoL {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .ContactoL .enviar {
+      display: flex;
+      justify-content: center; }
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  .TextoDefinición {
+    margin: 1rem; } }
 
 @media (min-width: 1200px) {
   .layout {
@@ -249,8 +276,22 @@ h1 {
     justify-content: center; }
   .ImgEvento {
     max-width: 1080px; }
+  .atleta img {
+    width: 6rem;
+    height: 6rem; }
   .oculto {
     display: inline; }
+  .Evento {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly; }
+    .Evento .TextoEvento {
+      display: flex;
+      align-items: center;
+      max-width: 20%; }
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ----------------------------------------------------------------------------------------------------Competencias */
   .Ultima {
     display: flex;
     flex-direction: row; }
@@ -267,34 +308,9 @@ h1 {
       margin: 1em;
       padding: 1em;
       max-width: 50%; }
-  .imagenes {
-    display: flex;
-    align-content: center;
-    flex-direction: column; }
-  .imagenes img {
-    padding: 10px; }
-  .Nelo5 {
-    transition: all 1s;
-    max-width: 1080px; }
-    .Nelo5:hover {
-      max-width: 1100px; }
-    .Nelo5 .TextoT {
-      font-size: 2em; }
-  .Evento {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly; }
-    .Evento .TextoEvento {
-      display: flex;
-      align-items: center;
-      max-width: 20%; }
-  .ContactoL {
-    display: flex;
-    justify-content: center;
-    flex-direction: column; }
-    .ContactoL .enviar {
-      display: flex;
-      justify-content: center; }
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
   /* ---------------------------------------------------------------------------------------------------- */
   /*  */
   /* ----------------------------------------------------------------------------------------------------Tienda */
@@ -363,30 +379,32 @@ h1 {
   /* ---------------------------------------------------------------------------------------------------- */
   /*  */
   /* ----------------------------------------------------------------------------------------------------Galeria */
-  .gridGaleria img {
+  .gridgaleria img {
     width: 360px;
     height: 209px; }
+  .imagenes {
+    display: flex;
+    flex-direction: column; }
+  .imagenes img {
+    width: 360px;
+    height: 209px;
+    padding: 10px; }
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ---------------------------------------------------------------------------------------------------- */
+  /*  */
+  /* ----------------------------------------------------------------------------------------------------Contacto */
+  .ContactoL {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .ContactoL .enviar {
+      display: flex;
+      justify-content: center; }
   /*  */
   /* ---------------------------------------------------------------------------------------------------- */
   /*  */ }
-
-button, .btn--Pcookies, .btn--Acookies, .btn--Tservicios, .btn--Pprivacidad {
-  background-color: black;
-  color: red;
-  border-radius: 10px;
-  width: 80px; }
-
-.btn--Pcookies {
-  background-color: #02265c; }
-
-.btn--Acookies {
-  background-color: blue; }
-
-.btn--Tservicios {
-  background-color: #0247af; }
-
-.btn--Pprivacidad {
-  background-color: #82b1f7; }
 
 .textoA {
   background-color: #0d6efd;
