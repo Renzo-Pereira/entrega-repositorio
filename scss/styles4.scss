@@ -285,6 +285,7 @@ h2{
 /*  */
 /* ----------------------------------------------------------------------------------------------------Galeria */
 .imagenes{
+    padding-left: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -552,6 +553,7 @@ display: inline;
     }
 
     .imagenes{
+        padding-left: 35px;
         display: flex;
         flex-direction: column;
     }
