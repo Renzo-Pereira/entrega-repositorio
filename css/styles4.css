@@ -328,10 +328,11 @@ h1 {
       flex-direction: column;
       align-items: center; }
     .tienda .Nelo5 {
+      padding-left: 100px;
       transition: all 1s;
-      max-width: 1080px; }
+      max-width: 730px; }
       .tienda .Nelo5:hover {
-        max-width: 1100px; }
+        max-width: 750px; }
       .tienda .Nelo5 .TextoT {
         font-size: 2em; }
   .TituloTienda {
